@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <script>
+        let vetorzinho = [1,2,3,4];
+    console.log (vetorzinho)
+    function dobrar(x){
+        return x * 2;
+    }
+    const novoVetorzinho = vetorzinho.map(dobrar);
+    console.log(novoVetorzinho);
+    const vetorzinhoFunAnonima = vetorzinho.map ((x) =>{
+        return x * 2;
+    });
+      let letras = ['a', 'b', 'c'];
+        console.log(letras);
+        function maiusculo(x) {
+            return x.toUpperCase();
+        }
+        const letrasMaiusculas = letras.map(maiusculo);
+        console.log(letrasMaiusculas);
+    
+
+    function quadrado(x) {
+    return x * x;
+     }
+
+     let numero = [3,5,7];
+      console.log (numero)
+     let aoQuadrado = numero.map(quadrado);
+     console.log(aoQuadrado);
+
+
+    function exclamacao (x) {
+        return x + "!";
+    }
+
+    let palavras = ['casa', 'carro'];
+     console.log (palavras)
+    let addExclamacao = palavras.map(exclamacao);
+    console.log(addExclamacao);
+
+    function paraString (num) {
+        return num.toString();
+    }
+
+    let numeros = [1,2,3];
+     console.log (numeros)
+    let comoString = numeros.map (paraString);
+
+    console.log(comoString);
+
+    let pares=[1,2,3,4,5];
+    console.log (pares)
+
+    function ePar(x){
+        return x % 2 ===0;
+    }
+    const numerosPares = pares.filter(ePar);
+    console.log(numerosPares);
+
+
+    function maiorQue (palavra){
+        return palavra.length > 3;
+    }
+    let planeta = ['sol','lua','estrela'];
+    console.log(planeta);
+    let resultado = planeta.filter(maiorQue);
+    console.log(resultado);
+
+    function maiorQueDez (x){
+        return x > 10;
+    }
+    let nums = [5,12,8,15];
+    console.log(nums);
+    let resultad = nums.filter(maiorQueDez);
+    console.log(resultad);
+
+    function comecaCom (palavra){
+        return palavra.startsWith('a');
+    }
+    let palavra = ['passaro','bola','arco'];
+    console.log(palavra)
+    let resulta = palavra.filter(comecaCom);
+    console.log(resulta);
+
+    function verdadeiro(valor){
+        return Boolean(valor);
+    }
+    let dados = [0, 'a', false, 10, '', null];
+    console.log(dados);
+    let result = dados.filter(verdadeiro);
+    console.log(result);
+
+    function somar(acumulador, valor ) {
+        return acumulador + valor;
+        
+    }
+    let nrm = [1,2,3,4];
+    console.log(nrm)
+    let resul = nrm.reduce(somar);
+    console.log(resul);
+
+    function concatenar(acumulador, valor){
+        return acumulador + valor;
+    }
+    let letra = ['a','b','c']
+    console.log(letra)
+    let resu = letra.reduce(concatenar);
+    console.log(resu)
+
+    function maiorNumero(a,b){
+        return a>b? a:b;
+    }
+    let opcoes = [10,3,25,7];
+    console.log(opcoes);
+    let res = opcoes.reduce(maiorNumero);
+    console.log(res)
+
+    function quantidade(a){
+        return 
+    }
+    </script>
+</body>
+</html>
