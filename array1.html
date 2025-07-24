@@ -122,9 +122,41 @@
     let res = opcoes.reduce(maiorNumero);
     console.log(res)
 
-    function quantidade(a){
-        return 
+    function encontrarMaior(array) {
+     return array.reduce(function(maior, atual) {
+        return atual > maior ? atual : maior;
+  });
+}
+    const nume = [10, 3, 25, 7];
+    console.log(nume)
+    const maior = encontrarMaior(nume);
+    console.log("O maior número é:", maior);
+
+    function contarLetraA(array) {
+    return array.reduce(function(contador, letra) {
+        return letra === 'a' ? contador + 1 : contador;
+  }, 0);
+}
+
+    function contarLetra(array) {
+    return array.reduce(function(contador, letra) {
+        return letra === 'a' ? contador + 1 : contador;
+  }, 0);
+} 
+    let letrs = ['a', 'b', 'a', 'c', 'a'];
+    console.log(letrs);
+    let quantidade = contarLetra(letrs);
+    console.log(quantidade);
+
+    function multiplicarNumeros (num){
+        return num.reduce(function(resultado, numero){
+            return resultado * numero;
+        }, 1)
     }
+    let numr = [2,3,4];
+    console.log(numr);
+    let valor = multiplicarNumeros(numr);
+    console.log(valor);
     </script>
 </body>
 </html>
